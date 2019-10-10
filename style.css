@@ -30,7 +30,6 @@ article {font-family: 'Courier New', Courier, monospace;
 img {float: center; max-resolution: 10px;
 }
 
-/*header*/
 
 
 /*links*/
@@ -106,6 +105,9 @@ a:hover {
   border-radius: 5px;
   background-color: #ffb677;
   padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Create two columns that float next to eachother */
