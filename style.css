@@ -4,18 +4,79 @@ body {font-family: Times, Times New Roman, serif;
  box-sizing: border-box;
 background-color: #ffd98e;}
 
-link {font-family: Times, Times New Roman, serif;
+a {font-family: Times, Times New Roman, serif;
   color: #070804;}
 
  h1 {color:#616f39; text-align: center
  } 
 
- h2 {color:616f39; text-align: center
+ h2 {color:#616f39; text-align: center
  }
 
 p {font-family: Verdana, Geneva, Tahoma, sans-serif; text-align: center
-
 }
 
 article {font-family: 'Courier New', Courier, monospace; text-align: center;
 }
+
+img {float: center; max-resolution: 10px;
+}
+
+
+
+/*links*/
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+a {
+  border-bottom: 1px solid #453886;
+  color: #453886;
+  padding-bottom: .25em;
+  text-decoration: none;
+}
+
+a:hover {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/squiggle.svg");
+  background-position: bottom;
+  background-repeat: repeat-x;
+  background-size: 20%;
+  border-bottom: 0;
+  padding-bottom: .3em;
+  text-decoration: none;
+}
+
+ul {list-style: none}
+
+
+
+/*contact form*/
+
+input {
+  width: 70%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  align: center;
+}
+
+submit {
+  width: 70%;
+  align:center;
+}
+
+textarea {
+  style= "width: 600px height: 600px"}
