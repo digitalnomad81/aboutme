@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <ul>
-    <li><a href="/aboutme.html">About me</a><li>
-      <br>
-    <li><a href="#">Contact</a></li>
-  </ul>
     <link rel="stylesheet" type="text/css" href="/style.css">
     <title>Contact</title>
 </head>
 
 <body>
+  <nav>
+  <a href="/aboutme.html">About me</a>
+  <a href="contact.html">Contact</a>
+  </nav>
+
     <article>
         <header>
         <h1>Who am I?</h1>
@@ -19,35 +19,38 @@
     </article>
     
 
-<h2>Contact Form</h2>
-
 <div class="container">
-  <form action="/action_page.php">
-    <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-    <label for="country">Country</label>
-    <select id="country" name="country">
-      <option value="Belgium">Belgium</option>
-      <option value="Canada">Canada</option>
-      <option value="France">France</option>
-      <option value="Netherlands">Netherlands</option>
-      <option value="Germany">Germany</option>
-      <option value="Spain">Spain</option>
-      <option value="usa">US</option>
-      <option value="Other">Other</option>
-    </select>
-
-    <label for="subject">Subject</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="width: 600px height: 600px"></textarea>
-
-    <input type="submit" value="Submit">
-  </form>
+  <div style="text-align:center">
+    <h2>Contact me</h2>
+    <p>Send me a pigeon, or just send me a message.</p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="20190907_175752.jpg" style="width:100%">
+  </div>
+  <div class=column>
+    <form action="/action_page.php">
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      <label for="country">Country</label>
+      <select id="country" name="country">
+        <option value="belgium">Belgium</option>
+        <option value="france">France</option>
+        <option value="germany">Germany</option>
+        <option value="netherlands">Netherlands</option>
+        <option value="canada">Canada</option>
+        <option value="usa">USA</option>
+      </select>
+      <label for="subject">Subject</label>
+      <textarea id="subject" name="Subject" placeholder="Write something.." style="height:170px"></textarea>
+      <input type="submit" value="Submit">
+    </form>
+    </div>
+  </div>
 </div>
-<br>
+
 <footer>
     <p>Posted by: Tabitha Bidee</p>
     <p>Contact information: <a href="mailto:bidee.tabitha@gmail.com"> bidee.tabitha@gmail.com</a>.</p>

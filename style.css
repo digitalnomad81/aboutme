@@ -4,19 +4,25 @@ body {font-family: Times, Times New Roman, serif;
  box-sizing: border-box;
 background-color: #ffd98e;}
 
+header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
 a {font-family: Times, Times New Roman, serif;
   color: #070804;}
 
- h1 {color:#616f39; text-align: center
+ h1  {color:#616f39; 
+ } 
+ 
+ h2 {color:#616f39; 
  } 
 
- h2 {color:#616f39; text-align: center
- }
-
-p {font-family: Verdana, Geneva, Tahoma, sans-serif; text-align: center
+p {font-family: Verdana, Geneva, Tahoma, sans-serif; 
 }
 
-article {font-family: 'Courier New', Courier, monospace; text-align: center;
+article {font-family: 'Courier New', Courier, monospace; 
 }
 
 img {float: center; max-resolution: 10px;
@@ -46,6 +52,7 @@ a {
   border-bottom: 1px solid #453886;
   color: #453886;
   padding-bottom: .25em;
+  margin-right: 10px;
   text-decoration: none;
 }
 
@@ -59,24 +66,71 @@ a:hover {
   text-decoration: none;
 }
 
-ul {list-style: none}
-
-
 
 /*contact form*/
 
-input {
-  width: 70%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  align: center;
+* {
+  box-sizing: border-box}
+
+  /*style inputs*/
+
+  input [type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+
+  input [type=submit] {
+    background-color: #ffb677;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+
+  input [type=submit]:hover {
+    background-color: #616f39;
+  } 
+
+
+/* Style container/contact section */
+
+.container {
+
+  border-radius: 5px;
+  background-color: #ffb677;
+  padding: 10px;
 }
 
-submit {
-  width: 70%;
-  align:center;
+/* Create two columns that float next to eachother */
+.column {
+
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+  
 }
 
-textarea {
-  style= "width: 600px height: 600px"}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
