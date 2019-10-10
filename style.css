@@ -16,18 +16,21 @@ a {font-family: Times, Times New Roman, serif;
  h1  {color:#616f39; 
  } 
  
- h2 {color:#616f39; 
+ h2 {color:#616f39;
+  text-align:center; 
  } 
 
 p {font-family: Verdana, Geneva, Tahoma, sans-serif; 
 }
 
-article {font-family: 'Courier New', Courier, monospace; 
+article {font-family: 'Courier New', Courier, monospace;
+  text-align:center;
 }
 
 img {float: center; max-resolution: 10px;
 }
 
+/*header*/
 
 
 /*links*/
