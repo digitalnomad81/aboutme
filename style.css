@@ -1,47 +1,21 @@
 
-<style>
-                ul {
-                  list-style-type: none;
-                  margin: 0;
-                  padding: 0;
-                }
-                </style>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+body {font-family: Times, Times New Roman, serif;
+ box-sizing: border-box;
+background-color: #ffd98e;}
 
-Contact form 
+link {font-family: Times, Times New Roman, serif;
+  color: #070804;}
 
-body {font-family: Arial, Helvetica, sans-serif;}
-* {box-sizing: border-box;}
+ h1 {color:#616f39; text-align: center
+ } 
 
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
+ h2 {color:616f39; text-align: center
+ }
+
+p {font-family: Verdana, Geneva, Tahoma, sans-serif; text-align: center
+
 }
 
-input[type=submit] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
+article {font-family: 'Courier New', Courier, monospace; text-align: center;
 }
