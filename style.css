@@ -162,3 +162,14 @@ form {
   justify-content: center;
   align-items: center;
 }
+
+/*skills acquiered*/
+
+.container1 {
+  border-radius: 5px;
+  background-color: #ffb677;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
