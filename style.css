@@ -8,6 +8,7 @@ header {
   display: flex;
   flex-direction: column;
   text-align: center;
+  align-items: center;
 }
 
 a {font-family: Times, Times New Roman, serif;
@@ -91,6 +92,7 @@ a:hover {
     padding: 12px 20px;
     border: none;
     cursor: pointer;
+    color: 616f39;
   }
 
   input [type=submit]:hover {
@@ -186,3 +188,47 @@ form {
   justify-content: space-between;
 }
 
+/*blockquote*/
+
+blockquote {
+  font-size: 3rem;
+  width: 850px;
+  text-align: center;
+  background-color: #070804;
+}
+cite {
+  display: block;
+  text-align: right;
+  font-family: Verdana, Arial, sans-serif;
+  margin-top: 1rem;
+  font-size: .9rem;
+  color: #aaa;
+  font-style: normal;
+}
+blockquote q {
+  font-family: Georgia, serif;
+  font-style: italic;
+  letter-spacing: .1rem;
+}
+blockquote q span { 
+  will-change: opacity, filter;
+  opacity: 0;
+  filter: blur(0px);
+}
+q {
+  quotes: "“" "”" "‘" "’";
+  font-size: 25px;
+  color: white;
+}
+q:before {
+    content: open-quote;
+    margin-right: .8rem;
+}
+q:after {
+  content: close-quote;
+}
+q:before, q:after {
+  color: #ccc;
+  font-size: 4rem;
+  object.style.animationIterationCount="infinite";
+}
